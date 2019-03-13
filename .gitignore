@@ -1,0 +1,9 @@
+# Ignore working directory containing Terraform configuration files
+.terraform/
+
+# AWS Password file
+*.tfvars
+
+# state file and backup
+*.tfstate
+*.tfstate.*
