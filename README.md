@@ -14,6 +14,15 @@ When importing an existing key pair the public key material may be in any format
 # Useful Info
 - CoreOS version = 2023.5.0
 
+# Architecture
+![Image of architecture](https://s3-ap-southeast-1.amazonaws.com/temphanz/3-tier-v0.1.jpg)
+
+| Tables        | 
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 # Usage
 Clone this repository and run:
 
