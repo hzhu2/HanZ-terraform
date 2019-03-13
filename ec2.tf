@@ -32,6 +32,6 @@ data "template_file" "user_data" {
 
 
 # output EC2 public IP
-output "EC2_IP" {
+output "EC2_INSTANCE_IP" {
   value = "${ aws_instance.HanZ-three-tier.public_ip }"
 }

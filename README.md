@@ -23,7 +23,8 @@ Terraform apply:
 ~/HanZ-terraform/ terraform apply
 ```
 
-After the process is completed, should then be able to connect to `http://EC2_INSTANCE_IP/app1` and `http://EC2_INSTANCE_IP/app2` in your browser.
+After the process is completed, EC2 Instance IP will be showing on the CMD.
+Access application via `http://EC2_INSTANCE_IP/app1` and `http://EC2_INSTANCE_IP/app2` in your browser.
 
 # References
 - https://github.com/lbracken/docker-example (for the example 3-tier application)
