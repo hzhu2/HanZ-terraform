@@ -18,12 +18,14 @@ When importing an existing key pair the public key material may be in any format
 ![Image of architecture](https://s3-ap-southeast-1.amazonaws.com/temphanz/3-tier-v0.1.jpg)
 
 **Custom route table** <br />
+
 Destination | Target
 --- | --- 
 10.0.0.0/16| local 
 0.0.0.0/0 | igw-id
 
 **Main route table** <br />
+
 Destination | Target
 --- | --- 
 10.0.0.0/16| local 
