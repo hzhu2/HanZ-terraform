@@ -31,6 +31,16 @@ Destination | Target
 10.0.0.0/16| local 
 0.0.0.0/0 | nat-gateway-id
 
+**3-tiered application that runs as a set of Docker containers** <br />
+<pre>
+                                  +---------+
+                             +--> |  app1   |
+             +---------+    /     +---------+     +---------+
+(Client) --> |  nginx  | --+----> |  app2   | --> | MongoDB |
+             +---------+          +---------+     +---------+
+</pre>
+
+
 # Usage
 Clone this repository and run:
 
@@ -52,6 +62,8 @@ Terraform apply:
 After the process is completed, EC2 Instance IP will be showing on the CMD.
 
 Access applications via `http://EC2_INSTANCE_IP/app1` and `http://EC2_INSTANCE_IP/app2` in your browser.
+
+Currently, the running app is available at http://54.169.113.98/app1 and http://54.169.113.98/app2
 
 # References
 - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html (For EC2 key pair)
