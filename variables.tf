@@ -1,5 +1,11 @@
+# declare access key and secret key
+variable "access_key" {}
+variable "secret_key" {}
+
 # aws provider
 provider "aws" {
+  access_key = "${var.access_key}"
+  secret_key = "${var.secret_key}"
   region = "ap-southeast-1"
 }
 
